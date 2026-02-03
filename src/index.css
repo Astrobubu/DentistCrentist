@@ -91,6 +91,13 @@ body {
   overflow: hidden;
 }
 
+/* Hide Calendly floating badge/banner */
+.calendly-badge-widget,
+.calendly-badge-content,
+.calendly-popup-close {
+  display: none !important;
+}
+
 /* Smooth card hover */
 .card-hover {
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);

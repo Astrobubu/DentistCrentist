@@ -38,12 +38,14 @@ export default function BookingSection() {
 
         <div className="grid lg:grid-cols-5 gap-8 items-start">
           {/* Calendly embed */}
-          <div className="lg:col-span-3 bg-white rounded-2xl shadow-lg shadow-gray-200/40 border border-gray-100 overflow-hidden">
+          <div className="lg:col-span-3 bg-white rounded-2xl shadow-lg shadow-gray-200/40 border border-gray-100 overflow-hidden relative">
             <div
               className="calendly-inline-widget"
-              data-url="https://calendly.com/astrobubu?hide_event_type_details=1&hide_gdpr_banner=1&hide_landing_page_details=1&primary_color=0d9488"
+              data-url="https://calendly.com/astrobubu/consultation?hide_event_type_details=1&hide_gdpr_banner=1&hide_landing_page_details=1&primary_color=0d9488"
               style={{ minWidth: '320px', height: '660px' }}
             />
+            {/* Cover "powered by Calendly" branding in top-right corner */}
+            <div className="absolute top-0 right-0 w-36 h-10 bg-white z-10 rounded-bl-lg" />
           </div>
 
           {/* Sidebar with alternatives + info */}
