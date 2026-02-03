@@ -1,0 +1,12 @@
+export default function ToothIcon({ className = 'w-8 h-8' }) {
+  return (
+    <svg className={className} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M32 4c-7 0-12 3-14.5 6S14 16 14 20c0 5 2 8 2 12s-1 10-2 16c-1.5 8 3 12 7 12s6-4 7-10c.5-3 1.5-6 4-6s3.5 3 4 6c1 6 3 10 7 10s8.5-4 7-12c-1-6-2-12-2-16s2-7 2-12c0-4-1-7-3.5-10S39 4 32 4z"
+        fill="currentColor"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+    </svg>
+  )
+}
